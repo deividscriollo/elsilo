@@ -1,19 +1,31 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
-<html>
+<htmlm lang="es">
 <head>
-<title>The Paradise-Hotel Website Template | Contact :: w3layouts</title>
+<title>El Silo Centro Naturista</title>
+<!--Icon-->
+<link rel="shortcut icon" href="images/l.fw.png">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <script src="js/jquery.min.js"></script>
-<link type="text/css" rel="stylesheet" href="css/JFGrid.css" />
+<!--start slider -->
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<script src="js/fwslider.js"></script>
+<!--end slider -->
+<!---strat-date-piker---->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script src="js/jquery-ui.js"></script>
+<script>
+	  $(function() {
+	    $( "#datepicker,#datepicker1" ).datepicker();
+	  });
+</script>
+<!---/End-date-piker---->
+
 <link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
 		<script type="text/javascript" src="js/JFCore.js"></script>
 		<script type="text/javascript" src="js/JFForms.js"></script>
@@ -31,7 +43,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			var pull 		= $('#pull');
 				menu 		= $('nav ul');
 				menuHeight	= menu.height();
-
 			$(pull).on('click', function(e) {
 				e.preventDefault();
 				menu.slideToggle();
@@ -49,80 +60,82 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 <!-- start header -->
 <div class="header_bg">
-<div class="wrap">
-	<div class="header">
-		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""></a>
-		</div>
-		<div class="h_right">
-			<!--start menu -->
-			<ul class="menu">
-					<li class="active">
-						<div class="dc-menu">
-								<a href="index.html">
-								<img src="images/home.fw.png" width="90%">	
-								<div style="line-height:2px;">Home</div>
-								</a>
-						</div>					
-					</li> 
-					<li>
-						<div class="dc-menu">
-								<a href="index.html">
-								<img src="images/servicios.fw.png" width="70%">	
-								<div style="line-height:2px;">Servicios</div>
-								</a>
-						</div>					
-					</li>
-					<li >
-						<div class="dc-menu">
-								<a href="galeria.html">
-								<img src="images/galeria.fw.png" width="70%">	
-								<div style="line-height:2px;">Galería</div>
-								</a>
-						</div>					
-					</li>
-					<li >
-						<div class="dc-menu">
-								<a href="quienes.html">
-								<img src="images/quienes.fw.png" width="40%">	
-								<div style="line-height:2px;">Quienes Somos</div>
-								</a>
-						</div>					
-					</li>
-					<li >
-						<div class="dc-menu">
-								<a href="contact.html">
-								<img src="images/contactos.fw.png" width="50%">	
-								<div style="line-height:2px;">Contactos</div>
-								</a>
-						</div>					
-					</li>
-					<li >
-						<div class="dc-menu">
-								<a href="index.html">
-								<img src="images/acceso.fw.png" width="70%">	
-								<div style="line-height:2px;">Acceso</div>
-								</a>
-						</div>					
-					</li>	
-			</ul>
-		</div>
-		<div class="clear"></div>
-		<div class="top-nav">
-		<nav class="clearfix">
-				<ul>
-				<li class="active"><a href="index.html">hotel</a></li> 
-				<li><a href="rooms.html">rooms & suits</a></li> 
-				<li><a href="reservation.html">reservation</a></li> 
-				<li><a href="activities.html">activities</a></li> 
-				<li><a href="contact.html">contact</a></li>
+	<div class="wrap">
+		<div class="header">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="h_right">
+				<!--start menu -->
+				<ul class="menu">
+						<li class="active">
+							<div class="dc-menu">
+									<a href="index.html">
+									<img src="images/home.fw.png" width="90%">	
+									<div style="line-height:2px;">Home</div>
+									</a>
+							</div>					
+						</li> 
+						<li>
+							<div class="dc-menu">
+									<a href="servicios.html">
+									<img src="images/servicios.fw.png" width="70%">	
+									<div style="line-height:2px;">Servicios</div>
+									</a>
+							</div>					
+						</li>
+						<li >
+							<div class="dc-menu">
+									<a href="galeria.html">
+									<img src="images/galeria.fw.png" width="70%">	
+									<div style="line-height:2px;">Galería</div>
+									</a>
+							</div>					
+						</li>
+						<li >
+							<div class="dc-menu">
+									<a href="quienes.html">
+									<img src="images/quienes.fw.png" width="40%">	
+									<div style="line-height:2px;">Quienes Somos</div>
+									</a>
+							</div>					
+						</li>
+						<li >
+							<div class="dc-menu">
+									<a href="contactos.html">
+									<img src="images/contactos.fw.png" width="50%">	
+									<div style="line-height:2px;">Contactos</div>
+									</a>
+							</div>					
+						</li>
+						<li >
+							<div class="dc-menu">
+									<a href="acceso.html">
+									<img src="images/acceso.fw.png" width="70%">	
+									<div style="line-height:2px;">Acceso</div>
+									</a>
+							</div>					
+						</li>	
 				</ul>
-				<a href="#" id="pull">Menu</a>
-			</nav>
+			</div>
+			<div class="clear"></div>
+			<div class="top-nav">
+			<nav class="clearfix">
+					<ul>
+					<li class="active"><a href="index.html">Inicio</a></li> 
+					<li><a href="rooms.html">Servicios</a></li> 
+					<li><a href="reservation.html">Galería</a></li> 
+					<li><a href="activities.html">Quienes Somos</a></li> 
+					<li><a href="contact.html">Contactos</a></li>
+					<li><a href="contact.html">Acceso</a></li>
+					</ul>
+					<a href="#" id="pull">Menu</a>
+				</nav>
+			</div>
 		</div>
 	</div>
 </div>
-</div>
+
 <!--start main -->
 <div class="main_bg">
 <div class="wrap">
@@ -144,7 +157,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				   		<p>Telf: 062950050 </p>
 				   		<p>Cel: 099119571</p>
 				 	 	<p>Email: <a href="carlineescobar71@gmail.com">carlineescobar71@gmail.com</a></p>
-				   		<p>Siguenos en: <a href="#">Facebook</a>, <a href="#">Twitter</a></p>
+				   		<p>Siguenos en: <a href="https://www.facebook.com/pages/Centro-Naturista-El-Silo/1476642809227179?fref=ts">Facebook</a>, <a href="https://twitter.com/elsilosocial">Twitter</a></p>
 				   </div>
 				</div>				
 				<div class="contact_right">
@@ -177,7 +190,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		  </div>
 	</div>
 </div>
-</div>		
+</div>	
 <!--start main -->
 <div class="footer_bg">
 	<div class="wrap">
@@ -187,49 +200,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="soc_icons">
 				<ul>
-					<li><a class="icon1" href="#"></a></li>
-					<li><a class="icon2" href="#"></a></li>					
+					<li><a class="icon1" href="https://www.facebook.com/pages/Centro-Naturista-El-Silo/1476642809227179?fref=ts"></a></li>
+					<li><a class="icon2" href="https://twitter.com/elsilosocial"></a></li>
+					<li><a class="icon3" href="https://plus.google.com/117580945511847981028/posts"></a></li>			
 					<div class="clear"></div>
 				</ul>	
 			</div>
 			<div class="clear"></div>
 		</div>
 	</div>
-</div>		
+</div>	
 </body>
 </html>
-<script type="text/javascript">
-	$(function(){
-		// Validacion y envio de correo
-		$('form-contac').validate({
-			 rules: {
-            firstname: "required",
-            lastname: "required",
-            email: {
-                required: true,
-                email: true
-            },
-            password: {
-                required: true,
-                minlength: 5
-            },
-            agree: "required"
-        },
-        
-        // Specify the validation error messages
-        messages: {
-            firstname: "Please enter your first name",
-            lastname: "Please enter your last name",
-            password: {
-                required: "Please provide a password",
-                minlength: "Your password must be at least 5 characters long"
-            },
-            email: "Please enter a valid email address",
-            agree: "Please accept our policy"
-        },
-        submitHandler: function(form) {
-            form.submit();
-        }
-		});
-	});
-</script>
+
+<span class="ir-arriba icon-arrow-up2">arriba</span>
